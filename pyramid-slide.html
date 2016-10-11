@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Pyramid Slide!</h1>
+
+    <form id="draw-form">
+        <label>
+            How high?
+        <input type="range" name="height" min="1" max="20" oninput="drawPyramid(this.value)"/> <label id="heightLabel">11</label>
+    </form>
+
+    <br><br>
+
+    <div id="pyramid"></div>
+
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="pyramid-slide.js"></script>
+</body>
+</html>
